@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  /* background-color: rgba(67, 71, 74, 0.842); */
+  background-image: url(Free\ Vector\ _\ Abstract\ background\ with\ memphis\ waves.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+
+.wrapper {
+  align-items: start;
+  width: 750px;
+  background: rgba(92, 86, 92, 0.505);
+  color: white;
+  padding: 40px 35px 55px;
+  border-radius: 10px;
+  backdrop-filter: blur(50px);
+  margin: 0 10px;
+  /* border: 4px solid rgba(0, 0, 0, 0.2); */
+}
+
+.wrapper h1 {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.wrapper .input-box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  /* background: slateblue; */
+}
+
+.input-box .input-field {
+  position: relative;
+  width: 47%;
+  /* background: rgba(18, 15, 15, 0.687); */
+  margin: 13px 0;
+}
+.input-box .input-field input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  outline: none;
+  font-size: 16px;
+  color: white;
+  border-radius: 6px;
+  padding: 15px 15px 15px 40px;
+}
+.input-box .input-field input::placeholder {
+  color: white;
+}
+.input-box .input-field i {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translatey(-50%);
+}
+.wrapper label {
+  font-size: 14.5px;
+  margin: 10px 0 23px;
+  display: inline-block;
+}
+.wrapper .btn {
+  width: 100%;
+  height: 40px;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+  font-weight: 600;
+}
+
+@media (max-width: 570px) {
+  .input-box .input-field {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
